@@ -1,0 +1,148 @@
+:root{
+    --theme-color: #5733b2; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+body::after{
+    content: '';
+    position: fixed;
+    inset: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: var(--theme-color);
+    clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+    z-index: -1
+}
+
+.login-card{
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 50px -30px black;
+    width: 1200px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: ;
+}
+
+a{
+    text-decoration: none;
+    color: var(--theme-color)
+}
+
+.column{
+    padding: 4rem;
+}
+
+.column form{
+    margin-top: 3rem;
+
+}
+
+.column:last-child{
+    background: ul(images/vecteezy_background-liquid-colorful-blue-triangle-geometric-abstract_5638032.png) center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    opacity: 9;
+    text-align: center;
+}
+
+.column:last-child::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, white, #ffffff82);
+    *{
+        z-index: 1;
+    }
+}
+
+h1{
+    margin-bottom: 15px;
+
+}
+
+.main-form{
+    margin-top: 3rem;   
+}
+
+.form-element{
+    width: 100%;
+     border: none;
+     background-color: rgb(237, 237, 237);
+     padding: 26px 30px;
+     font-size: 18px;
+     border-radius: 50px;
+     transition: box-shadow 0.2s;
+
+}
+
+.form-element:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--theme-color);
+}
+
+.main-form input{
+    margin-top: 1rem;
+}
+
+.main-form button{
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    margin-top: 1rem;
+    font-size: 18px -;
+}
+
+.main-form button:active{
+ scale: 0.95;
+ background-color: darken(var(--theme-color));   
+}
+
+.sign-up-button{
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: 2px solid var(--theme-color);
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.sign-up-button:hover{
+    background-color: var(--theme-color);
+    color: white;
+}
+
+.from-checkbox-item{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-left: 5px;
+    
+}
