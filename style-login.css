@@ -1,5 +1,5 @@
 :root{
-    --theme-color: #5733b2; 
+    --theme-color: #785fb7; 
 }
 
 *{
@@ -16,7 +16,14 @@ body{
     justify-content: center;
     min-height: 100vh;
     padding: 1.5rem;
+    
+    background-image: url(imgs/paul-gilmore-211347.webp);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    backface-visibility: opa;
 }
+
 body::after{
     content: '';
     position: fixed;
@@ -24,7 +31,8 @@ body::after{
     width: 60%;
     height: 100vh;
     background-color: var(--theme-color);
-    clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+    clip-path: polygon(0 400%, 0 0, 100% 0, 70% 100%);
+    opacity: 0.5;
     z-index: -1
 }
 

@@ -15,34 +15,223 @@
   </head>
   <body>
     <nav>
-      <i class="fa-brands fa-medium"></i>
+      <img src="imgs/airbnb.png" class="logo">
       <ul>
-        <li class="nav__links"><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="starting-page.html">Services</a></li>
-        <li><a type="button" href="log-in.html">Log in</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="starting-page.html">About </a></li>
+        <li><a href="log-in.html">Subscribe</a></li>
+        
+
       </ul>
     </nav>
-    <div class="who__div">
-      <div class="slogan__div">
-        <p>Start today</p>           <i class="fa-brands-2   fa-stack-overflow"></i>
-        <h2 class="slogan__h2">and get better in your prioritiesed aspects in life</h3>
-          <h3 class="slogan__h3">You will not regtret your decision</h6>
-          <a href="log-in.html"><button class="subscribe__button">subscribe</button></a>
+    <div class="info__div">
+      <div class="slogan__info">
+        <p>Personal advice</h1>  
+        <h3>If you have goals whether it is to lose weight, have no idea how and where to invest your money, have questions about the crypto market or need help in achieving your goals then you are in the right place.></h3>
+        <button><a href="log-in.html">Sign up now</a></button>
+        <button>Begin now <span>&#x27F6;</span></button>
+        <div class="img__div">
+          <img src="imgs/card.png" alt="">
         </div>
-      <div>
-        <img src="imgs/48642_default_landscape.png" alt="">
-        <img src="" alt="">
       </div>
     </div>
-    <div class="secondary__div">
-      <div class="slogan__secondary-div">
-        <h3><li>Meet people on the same mission than you are</li></h3>
-        <h3><li>Get personal assistance how to reach your goals</li></h3>
-        <h3><li>Get E-Mails with professional market analices and education E-Mails</li></h3>
+    <div class="info__market">
+      <p>Important infos about the Markets (source Tradingview)</p>
+      
+    </div>
+
+    <div class="market__div">
+      <div class="tradingview-widget-container">
+        <div style="border-radius: 10px;" class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+        {
+        "colorTheme": "dark",
+        "dateRange": "12M",
+        "showChart": true,
+        "locale": "en",
+        "largeChartUrl": "",
+        "isTransparent": false,
+        "showSymbolLogo": true,
+        "showFloatingTooltip": false,
+        "width": "400",
+        "height": "660",
+        "plotLineColorGrowing": "rgba(0, 255, 0, 1)",
+        "plotLineColorFalling": "rgba(255, 0, 0, 1)",
+        "gridLineColor": "rgba(42, 46, 57, 0)",
+        "scaleFontColor": "rgba(134, 137, 147, 1)",
+        "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+        "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+        "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+        "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+        "tabs": [
+          {
+            "title": "Indices",
+            "symbols": [
+              {
+                "s": "FOREXCOM:SPXUSD",
+                "d": "S&P 500"
+              },
+              {
+                "s": "NYSE:DOW"
+              },
+              {
+                "s": "SIX:SMI"
+              },
+              {
+                "s": "CME:BTC1!"
+              },
+              {
+                "s": "CME:ETH1!"
+              },
+              {
+                "s": "CRYPTO:BTCUSD"
+              }
+            ],
+            "originalTitle": "Indices"
+          },
+          {
+            "title": "Futures",
+            "symbols": [
+              {
+                "s": "CME_MINI:ES1!",
+                "d": "S&P 500"
+              },
+              {
+                "s": "CME:6E1!",
+                "d": "Euro"
+              },
+              {
+                "s": "COMEX:GC1!",
+                "d": "Gold"
+              },
+              {
+                "s": "NYMEX:CL1!",
+                "d": "Crude Oil"
+              },
+              {
+                "s": "NYMEX:NG1!",
+                "d": "Natural Gas"
+              },
+              {
+                "s": "CBOT:ZC1!",
+                "d": "Corn"
+              }
+            ],
+            "originalTitle": "Futures"
+          },
+          {
+            "title": "Bonds",
+            "symbols": [
+              {
+                "s": "CME:GE1!",
+                "d": "Eurodollar"
+              },
+              {
+                "s": "CBOT:ZB1!",
+                "d": "T-Bond"
+              },
+              {
+                "s": "CBOT:UB1!",
+                "d": "Ultra T-Bond"
+              },
+              {
+                "s": "EUREX:FGBL1!",
+                "d": "Euro Bund"
+              },
+              {
+                "s": "EUREX:FBTP1!",
+                "d": "Euro BTP"
+              },
+              {
+                "s": "EUREX:FGBM1!",
+                "d": "Euro BOBL"
+              }
+            ],
+            "originalTitle": "Bonds"
+          },
+          {
+            "title": "Forex",
+            "symbols": [
+              {
+                "s": "FX:EURUSD",
+                "d": "EUR/USD"
+              },
+              {
+                "s": "FX:GBPUSD",
+                "d": "GBP/USD"
+              },
+              {
+                "s": "FX:USDJPY",
+                "d": "USD/JPY"
+              },
+              {
+                "s": "FX:USDCHF",
+                "d": "USD/CHF"
+              },
+              {
+                "s": "FX:AUDUSD",
+                "d": "AUD/USD"
+              },
+              {
+                "s": "FX:USDCAD",
+                "d": "USD/CAD"
+              }
+            ],
+            "originalTitle": "Forex"
+          }
+        ]
+      }
+        </script>
       </div>
-      <div class="secondary__imgs">
-        <img src="imgs/example-27.png" alt="">
+      <div class="tradingview-widget-container">
+        <div style="border-radius: 10px;" class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+        {
+        "interval": "1m",
+        "width": 425,
+        "isTransparent": false,
+        "height": 450,
+        "symbol": "CME:BTC1!",
+        "showIntervalTabs": true,
+        "locale": "en",
+        "colorTheme": "dark"
+      }
+        </script>
+      </div>
+      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+  {
+  "width": 770,
+  "height": 400,
+  "currencies": [
+    "EUR",
+    "USD",
+    "JPY",
+    "GBP",
+    "CHF",
+    "AUD",
+    "CAD",
+    "NZD"
+  ],
+  "isTransparent": false,
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+    </div>
+    <div class="news__div">
+      <div class="sub__div">
+        <p>Get an E-Mail every Monday with pure education (Free)</p>
+        <input type="email" name="" placeholder="Enter E-Mail" id="">
+        <button><a href="starting-page.html">Subscribe</a></button>
+      </div>
+      <div class="email__div">
+        <img src="" alt="">
       </div>
     </div>
   </body>
